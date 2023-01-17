@@ -157,6 +157,8 @@
 		"@commitlint/config-conventional": "^17.4.2",
 		"@types/react": "^18.0.26",
 		"@typescript-eslint/eslint-plugin": "^5.48.2",
+		"cz-conventional-changelog": "^3.3.0",
+		"cz-git": "^1.4.1",
 		"eslint": "^8.32.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-config-standard-with-typescript": "^27.0.1",
@@ -169,5 +171,10 @@
 		"lint-staged": "^13.1.0",
 		"prettier": "^2.8.3",
 		"typescript": "^4.9.4"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
