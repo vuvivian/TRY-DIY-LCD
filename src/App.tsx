@@ -1,13 +1,14 @@
 import React from "react";
 import type { FC } from "react";
-import { ConfigProvider, Button } from "antd";
+import { ConfigProvider } from "antd";
+import { HashRouter } from "react-router-dom";
+import Router from "./routers/index";
 import zhCN from "antd/locale/zh_CN";
 import "antd/dist/reset.css";
 import "./App.less";
 
-console.log("test");
 const App: FC = () => (
-	<div className="App">
+	<HashRouter>
 		<ConfigProvider
 			locale={zhCN}
 			theme={{
@@ -16,9 +17,9 @@ const App: FC = () => (
 				}
 			}}
 		>
-			<Button type="primary">Button</Button>
+			<Router />
 		</ConfigProvider>
-	</div>
+	</HashRouter>
 );
 
 export default App;
